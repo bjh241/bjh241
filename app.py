@@ -25,10 +25,10 @@ from PIL import Image
 from streamlit_lottie import st_lottie
 
 # 초기화 설정.
-img = np.asarray(Image.open('./images/None.png'))
-img0 = np.asarray(Image.open('./images/Kawi.png'))
-img1 = np.asarray(Image.open('./images/Bawi.png'))
-img2 = np.asarray(Image.open('./images/Bo.png'))
+img = np.asarray(Image.open('./None.png'))
+img0 = np.asarray(Image.open('./Kawi.png'))
+img1 = np.asarray(Image.open('./Bawi.png'))
+img2 = np.asarray(Image.open('./Bo.png'))
 labels = {-1:'--', 0:'Kawi', 1:'Bawi', 2:'Bo'}
 hand_images = {-1:img, 0:img0, 1:img1, 2:img2}
 random.seed(time.time())                                    # 현재 시간으로 랜덤 시드 설정.
